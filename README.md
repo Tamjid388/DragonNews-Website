@@ -1,8 +1,22 @@
-# React + Vite
+# 📰 Dragon News Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A **news feed web application** built with **React**, **Tailwind CSS**, **DaisyUI**, and **React Icons**. This application displays news articles in a visually appealing card layout with details like author name, publication date, title, image, description, rating, and view count.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🎉 Demo
+
+[**Live Demo**](https://heartfelt-sawine-34160e.netlify.app/category/01)
+
+---
+
+## ✨ Features
+
+- 📰 Fetches news data from an API.
+- 🔑 **Firebase Authentication** for secure user login and registration.
+- 🖼️ Displays news articles in a **responsive card layout**.
+- 📅 Shows details such as author information, publication date, title, and description.
+- 🔗 Interactive icons for sharing and viewing the number of views.
+- 💅 Uses **Tailwind CSS** and **DaisyUI** for styling.
+
+---
