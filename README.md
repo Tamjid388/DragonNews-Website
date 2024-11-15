@@ -18,5 +18,6 @@ A **news feed web application** built with **React**, **Tailwind CSS**, **DaisyU
 - 📅 Shows details such as author information, publication date, title, and description.
 - 🔗 Interactive icons for sharing and viewing the number of views.
 - 💅 Uses **Tailwind CSS** and **DaisyUI** for styling.
+- 🌐 **Routing with React Router**: Enables smooth navigation between pages.
 
 ---
