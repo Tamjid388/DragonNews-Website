@@ -1,4 +1,5 @@
 import { FaEye, FaShareAlt, FaStar } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 export const NewsCard = ({news}) => {
 const {author, title, image_url, details, rating, total_view}=news
@@ -30,8 +31,11 @@ const {author, title, image_url, details, rating, total_view}=news
     {/* Details */}
     <p className="text-sm text-gray-600 line-clamp-3">
       {details}
-      <span className="text-blue-500 cursor-pointer"> Read More</span>
+    
     </p>
+    <Link 
+    to={`/news/${news._id}`}
+    className="text-blue-500 cursor-pointer"> Read More</Link>
 
     {/* Rating and Views */}
     <div className="flex justify-between items-center">
