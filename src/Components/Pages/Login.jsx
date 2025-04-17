@@ -1,10 +1,12 @@
 import { useContext } from "react"
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import { AuthContext } from "../../Provider/AuthProvider"
+import Swal from "sweetalert2"
 
 
 export const Login = () => {
   const{userLogin,setuser}=useContext(AuthContext)
+  const navigate=useNavigate()
   const handleSubmit=(e)=>{
     e.preventDefault()
     const form=e.target
@@ -15,8 +17,18 @@ export const Login = () => {
       // Signed in 
       const user = userCredential.user;
      setuser(user)
+     navigate("/")
     })
     .catch((error) => {
+      Swal.fire({
+        icon: 'error',
+        title: 'Login Failed',
+        text: 'Invalid email or password. Please try again.',
+       
+        confirmButtonColor: '#d33',
+        confirmButtonText: 'Try Again',
+      });
+      
       const errorCode = error.code;
       const errorMessage = error.message;
       console.log(errorMessage);
@@ -24,8 +36,10 @@ export const Login = () => {
   }
   return (
     <div className="min-h-screen ">
+      
     <div className="max-w-screen-sm mx-auto  bg-base-100 py-10 my-14">
        <div className="text-center ">
+        
       <h1 className="text-2xl font-bold py-8">Login now!</h1>
      
     </div>

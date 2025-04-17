@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import user from "../assets/user.png"
 import { AuthContext } from '../Provider/AuthProvider'
 
@@ -13,10 +13,19 @@ export const Navbar = () => {
         User && user.email
        }
         </div>
-        <div className=" flex space-x-4 text-2xl font-medium items-center justify-center">
-            <Link to="/">Home</Link>
-            <Link to="/about">About</Link>
-            <Link to="/career">Career</Link>
+        <div className=" flex space-x-4 text-xl font-medium items-center justify-center">
+            <NavLink 
+     className={({ isActive }) => `${isActive ? "bg-gray-500 text-white p-2 rounded-lg" : 
+      "bg-white"}`}
+            to="/">Home</NavLink>
+            <NavLink
+            className={({ isActive }) => `${isActive ? "bg-gray-500 text-white p-2 rounded-lg" : 
+              "bg-white"}`}
+            to="/about">About</NavLink>
+            <NavLink
+            className={({ isActive }) => `${isActive ? "bg-gray-500 text-white p-2 rounded-lg" : 
+              "bg-white"}`}
+            to="/career">Career</NavLink>
         </div>
         <div className="">
             <figure className='flex  items-center space-x-1'>

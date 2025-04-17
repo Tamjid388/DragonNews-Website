@@ -14,12 +14,11 @@ export const HomeLayout = () => {
       <LatestNews></LatestNews>
 
       <Navbar></Navbar>
-      <main className="pt-5 grid grid-cols-12">
+      <main className="pt-5 grid grid-cols-1  md:grid-cols-12">
         <aside className="col-span-3 ">
           <LeftNavbar></LeftNavbar>
         </aside>
         <section className="col-span-6 ">
-         
           <Outlet></Outlet>
         </section>
         <aside className="col-span-3 ">
