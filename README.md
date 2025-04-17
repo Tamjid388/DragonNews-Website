@@ -6,7 +6,7 @@ A **news feed web application** built with **React**, **Tailwind CSS**, **DaisyU
 
 ## 🎉 Demo
 
-[**Live Demo**](https://heartfelt-sawine-34160e.netlify.app/category/01)
+[**Live Demo**](https://dragonnewswebsite.netlify.app/category/01)
 
 ---
 
